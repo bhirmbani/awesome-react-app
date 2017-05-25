@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe"
+    },
+    {
+      "id": 2,
+      "name": "John Wick"
+    },
+    {
+      "id": 3,
+      "name": "John Bro"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "photographer": "Zukiman Mohamad",
+      "url": "https://images.pexels.com/photos/88212/pexels-photo-88212.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 2,
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 3,
+      "photographer": "Robert Villalta",
+      "url": "https://images.pexels.com/photos/128458/pexels-photo-128458.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 4,
+      "photographer": "Public Domain Pictures",
+      "url": "https://images.pexels.com/photos/68672/beach-beverage-caribbean-cocktail-68672.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 5,
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/247292/pexels-photo-247292.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 6,
+      "photographer": "Adrianna Calvo",
+      "url": "https://images.pexels.com/photos/17727/pexels-photo.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 7,
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/29724/pexels-photo-29724.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 8,
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/197465/pexels-photo-197465.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 9,
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/34938/pexels-photo.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 10,
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/59040/pexels-photo-59040.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 11,
+      "photographer": "Public Domain Pictures",
+      "url": "https://images.pexels.com/photos/40976/beach-beautiful-blue-coast-40976.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    },
+    {
+      "id": 12,
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/66445/pexels-photo-66445.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
+    }
+  ]
+}
