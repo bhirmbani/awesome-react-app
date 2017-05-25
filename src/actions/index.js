@@ -28,6 +28,44 @@ export const addPhoto = (newPhoto) => {
   }
 }
 
+export const getByPhotographerSuccess = (result) => ({
+  type: 'GET_BY_PHOTOGRAPHER_SUCCESS',
+  payload: result
+})
+
+export const getByPhotographer = (photographer) => {
+  return (dispatch) => {
+    fetch(`http://localhost:3000/photos/?photographer=${photographer}`)
+    .then(res => res.json())
+    .then(data => dispatch(getByPhotographerSuccess(data)));
+  }
+}
+
+export const getFavoriteSuccess = (favorite) => ({
+  type: 'GET_FAVORITE_SUCCESS',
+  payload: favorite
+})
+
+export const getFavoritePhotos = () => {
+  return (dispatch) => {
+    fetch('http://localhost:3000/favoritePhotos')
+    .then(res => res.json())
+    .then(data => dispatch(getFavoriteSuccess(data)));
+  }
+}
+
+export const addToFavoriteSuccess = (result) => ({
+  type: 'ADD_TO_FAVORITE_SUCCESS',
+  payload: result
+})
+
+export const addToFavorite = (photo) => {
+  return (dispatch) => {
+    axios.post(`http://localhost:3000/favoritePhotos`, photo)
+    .then(res => dispatch(addToFavoriteSuccess(res.data)));
+  }
+}
+
 // export const addPost = newPost => (dispatch) => {
 //   newPost.createdAt = new Date().toISOString();
 //   fetch('http://localhost:1234/posts', {

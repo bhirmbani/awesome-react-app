@@ -5,6 +5,13 @@ import { Redirect } from 'react-router-dom';
 
 import { addPhoto } from '../actions';
 
+const styles = {
+  formContainer: {
+    margin: '0 auto',
+    width: '50%'
+  }
+}
+
 class AddPhoto extends React.Component {
   constructor(props) {
     super(props)
@@ -14,13 +21,12 @@ class AddPhoto extends React.Component {
       isSubmitted: false
     }
   }
-  componentDidMount() {
-    console.log(this.state.isSubmitted)
-  }
 
   addPhotoSuccess (e) {
     e.preventDefault();
-    this.state.isSubmitted = true
+    this.setState({
+      isSubmitted: true
+    })
     this.props.addPhoto(this.state);
 
     const back = {
@@ -28,7 +34,6 @@ class AddPhoto extends React.Component {
       url: '',
     }
     this.setState(back);
-    console.log(this.state.isSubmitted)
   }
 
   handleChange(e) {
@@ -39,7 +44,7 @@ class AddPhoto extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.formContainer}>
         { (this.state.isSubmitted) && <Redirect to={{
             pathname: '/',
           }}/> }

@@ -74,5 +74,12 @@
       "photographer": "Unsplash",
       "url": "https://images.pexels.com/photos/66445/pexels-photo-66445.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb"
     }
+  ],
+  "favoritePhotos": [
+    {
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 1
+    }
   ]
 }

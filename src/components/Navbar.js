@@ -8,6 +8,7 @@ const NavBarComponent = () => (
     <Menu>
       <Menu.Item header><Link to={'/'}>InstaFavorite</Link></Menu.Item>
       <Menu.Item header><Link to={'/my-favorite'}>My Favorite Photos</Link></Menu.Item>
+      <Menu.Item header><Link to={'/search'}>Search</Link></Menu.Item>
       <Menu.Item header><Link to={'/add-photo'}>Add Photo</Link></Menu.Item>
     </Menu>
 );

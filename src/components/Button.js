@@ -12,4 +12,8 @@ export const ButtonComponent = () => (
   </div>
 )
 
-// export default ButtonComponent
+export const ButtonPrimary = () => (
+    <Button primary>Submit</Button>
+)
+
+export default ButtonPrimary
