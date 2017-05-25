@@ -41,8 +41,9 @@ class FavoritePhotos extends React.Component {
                 <Card raised
                 image={photo.url}
                 header={`Credits: ${photo.photographer}`}
+                extra={<ButtonPrimary onClick={() => this.confirmDelete(photo.photo_id, idx)} color="red" label="Delete"/>}
                 />
-                <ButtonPrimary onClick={() => this.confirmDelete(photo.photo_id, idx)} color="red" label="Delete"/>
+                
               </div>
             )}
         </Card.Group>
