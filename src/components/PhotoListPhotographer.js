@@ -55,7 +55,7 @@ class ByPhotographer extends React.Component {
         <div>
           <form onSubmit={this.searchSuccess.bind(this)}>
             <Input onChange={this.handleChange.bind(this)} value={this.state.photographer} name='photographer' type='text' placeholder='Search...' label='Search by photographer:' />
-            <ButtonPrimary type="submit" />
+            <ButtonPrimary color="blue" label="Submit" type="submit" />
           </form>
         </div>
         <div>
@@ -67,7 +67,6 @@ class ByPhotographer extends React.Component {
                   <Card raised
                   image={photo.url}
                   header={`Credits: ${photo.photographer}`}
-                  extra={<ButtonComponent />}
                   />
                 </div>
             )}

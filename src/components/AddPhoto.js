@@ -46,7 +46,7 @@ class AddPhoto extends React.Component {
     return (
       <div style={styles.formContainer}>
         { (this.state.isSubmitted) && <Redirect to={{
-            pathname: '/',
+            pathname: '/my-favorite',
           }}/> }
         <Form onSubmit={this.addPhotoSuccess.bind(this)}>
           <Form.Field>

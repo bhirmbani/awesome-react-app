@@ -77,9 +77,37 @@
   ],
   "favoritePhotos": [
     {
-      "photographer": "Pixabay",
-      "url": "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "photographer": "Bhir",
+      "url": "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p1814.png",
+      "isSubmitted": false,
+      "createdAt": "2017-05-25T13:13:10.530Z",
+      "updatedAt": "",
       "id": 1
+    },
+    {
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/7467/pexels-photo.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 2
+    },
+    {
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 3
+    },
+    {
+      "photographer": "Unsplash",
+      "url": "https://images.pexels.com/photos/26890/pexels-photo-26890.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 4
+    },
+    {
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 5
+    },
+    {
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/35545/watermelon-summer-little-girl-eating-watermelon-food.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "id": 6
     }
   ]
 }

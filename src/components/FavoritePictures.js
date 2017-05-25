@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Card } from 'semantic-ui-react'
+import { Card, Input } from 'semantic-ui-react'
 
-import { getFavoritePhotos } from '../actions';
+import store from '../store';
+import { getFavoritePhotos, deleteFavorite } from '../actions';
+import ButtonPrimary from './Button'
 
 const styles = {
   card: {
@@ -15,14 +17,23 @@ const styles = {
 };
 
 
+
+
 class FavoritePhotos extends React.Component {
   componentDidMount() {
     this.props.getFavoritePhotos()
+    
   }
 
+  confirmDelete(photoId, idx) {
+    this.props.deleteFavorite(photoId, idx);
+    this.props.favoritePhotos;
+  }
+  
+  
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Card.Group style={styles.card} itemsPerRow={6}>
           {this.props.favoritePhotos.length === 0 && <h1>There are no favorite photo yet...</h1>}
             {this.props.favoritePhotos.map((photo, idx) => 
@@ -31,7 +42,7 @@ class FavoritePhotos extends React.Component {
                 image={photo.url}
                 header={`Credits: ${photo.photographer}`}
                 />
-                
+                <ButtonPrimary onClick={() => this.confirmDelete(photo.photo_id, idx)} color="red" label="Delete"/>
               </div>
             )}
         </Card.Group>
@@ -39,6 +50,7 @@ class FavoritePhotos extends React.Component {
     )
   }
 }
+
 
 const mapStateToProps = (state) => {
   return {
@@ -49,6 +61,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getFavoritePhotos: () => dispatch(getFavoritePhotos()),
+    deleteFavorite: (photoId, idx) => dispatch(deleteFavorite(photoId, idx))
   }
 }
 

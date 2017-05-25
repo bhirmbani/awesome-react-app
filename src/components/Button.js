@@ -12,8 +12,8 @@ export const ButtonComponent = () => (
   </div>
 )
 
-export const ButtonPrimary = () => (
-    <Button primary>Submit</Button>
+export const ButtonPrimary = (props) => (
+    <Button onClick={props.onClick} color={props.color}>{props.label}</Button>
 )
 
 export default ButtonPrimary

@@ -7,11 +7,15 @@ export const fetchPhotosSuccess = (movie) => {
   }
 }
 
-export const fetchPhotos = () => {
+export const fetchPhotos = (searchQuery) => {
   return (dispatch) => {
-    fetch('http://localhost:3000/photos/')
+    fetch(`http://api.pexels.com/v1/search?query=${searchQuery}&per_page=24&page=1`, {
+      headers: {
+      'Authorization': '563492ad6f9170000100000143de09da7d704c1d67462c54f4d9a25e'
+    }
+    })
     .then(res => res.json())
-    .then(data => dispatch(fetchPhotosSuccess(data)));
+    .then(data => dispatch(fetchPhotosSuccess(data.photos)));
   }
 }
 
@@ -23,7 +27,7 @@ export const addPhotoSuccess = (newPhoto) => ({
 export const addPhoto = (newPhoto) => {
   const newPhotoWithDate = { ...newPhoto, createdAt: new Date().toISOString(), updatedAt: '' }
   return (dispatch) => {
-    axios.post(`http://localhost:3000/photos`, newPhotoWithDate)
+    axios.post(`http://localhost:3000/favoritePhotos`, newPhotoWithDate)
     .then(res => dispatch(addPhotoSuccess(res.data)));
   }
 }
@@ -35,7 +39,7 @@ export const getByPhotographerSuccess = (result) => ({
 
 export const getByPhotographer = (photographer) => {
   return (dispatch) => {
-    fetch(`http://localhost:3000/photos/?photographer=${photographer}`)
+    fetch(`http://localhost:3000/favoritePhotos/?photographer=${photographer}`)
     .then(res => res.json())
     .then(data => dispatch(getByPhotographerSuccess(data)));
   }
@@ -63,6 +67,18 @@ export const addToFavorite = (photo) => {
   return (dispatch) => {
     axios.post(`http://localhost:3000/favoritePhotos`, photo)
     .then(res => dispatch(addToFavoriteSuccess(res.data)));
+  }
+}
+
+export const delFavSuccess = (photoId, idx) => ({
+ type: 'DEL_FAV_SUCCESS',
+ payload: {photoId, idx}
+})
+
+export const deleteFavorite = (photoId, idx) => {
+  return (dispatch) => {
+    axios.delete(`http://localhost:3000/favoritePhotos/${photoId}`)
+    .then(res => dispatch(delFavSuccess(photoId, idx)));
   }
 }
 
