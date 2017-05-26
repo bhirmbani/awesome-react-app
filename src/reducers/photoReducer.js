@@ -52,13 +52,23 @@ const photoReducer = (state = initialState, action) => {
     }
 
     case 'DEL_FAV_SUCCESS': {
-      console.log(action.payload)
-      console.log(state)
+      // console.log(action.payload)
+      // console.log(state)
       // this.props.favoritePhotos.splice(photoId, 1)
       // const deleted = state.filter(data => data.id !== action.payload);
       const deleted = state.splice(action.payload.idx, 1);
       const newState = [ ...state ]
       return newState;
+    }
+
+    case 'EDIT_PHOTO_SUCCESS': {
+      console.log(action.payload)
+      // const photoId = action.payload.photo_id
+      // const photographer = action.payload.newPhoto.photographer
+      // const url = action.payload.newPhoto.url
+      
+
+
     }
 
     default:

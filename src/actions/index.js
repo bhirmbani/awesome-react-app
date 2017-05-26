@@ -82,6 +82,18 @@ export const deleteFavorite = (photoId, idx) => {
   }
 }
 
+export const editPhotoSuccess = (photoId, newPhoto) => ({
+  type: 'EDIT_PHOTO_SUCCESS',
+  payload: {photoId, newPhoto}
+});
+
+export const editPhoto = (photoId, newPhoto) => {
+  return (dispatch) => {
+    axios.patch(`http://localhost:3000/favoritePhotos/${photoId}`)
+    .then(res => dispatch(editPhotoSuccess(photoId, newPhoto)));
+  }
+}
+
 // export const addPost = newPost => (dispatch) => {
 //   newPost.createdAt = new Date().toISOString();
 //   fetch('http://localhost:1234/posts', {

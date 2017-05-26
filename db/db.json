@@ -77,37 +77,14 @@
   ],
   "favoritePhotos": [
     {
-      "photographer": "Bhir",
-      "url": "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p1814.png",
-      "isSubmitted": false,
-      "createdAt": "2017-05-25T13:13:10.530Z",
-      "updatedAt": "",
+      "photographer": "Bhir edit",
+      "url": "https://images.pexels.com/photos/8504/wood-explosion-fire-hot.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
       "id": 1
     },
     {
       "photographer": "Unsplash",
-      "url": "https://images.pexels.com/photos/7467/pexels-photo.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
+      "url": "https://images.pexels.com/photos/27603/pexels-photo-27603.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
       "id": 2
-    },
-    {
-      "photographer": "Pixabay",
-      "url": "https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
-      "id": 3
-    },
-    {
-      "photographer": "Unsplash",
-      "url": "https://images.pexels.com/photos/26890/pexels-photo-26890.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
-      "id": 4
-    },
-    {
-      "photographer": "Pixabay",
-      "url": "https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
-      "id": 5
-    },
-    {
-      "photographer": "Pixabay",
-      "url": "https://images.pexels.com/photos/35545/watermelon-summer-little-girl-eating-watermelon-food.jpg?w=280&h=200&fit=crop&auto=compress&cs=tinysrgb",
-      "id": 6
     }
   ]
 }
